@@ -64,5 +64,3 @@ def main(argv: list[str] | None = None) -> int:
     
     # Execute training
     trainer.train()
-
-
