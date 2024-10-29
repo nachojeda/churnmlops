@@ -1,0 +1,21 @@
+mlflow:
+  experiment_name: "Bank Customer Churn"
+  tracking_uri: "http://127.0.0.1:8080"  # MLFlow tracking URI
+  run_name: "Random Forest"
+  tag: "Simplest experiment" # Tag for added info to the info
+  tag_des: "Description"
+
+model: 
+  type: "random_forest"  # or "logistic_regression", "xgboost", etc.
+  params: 
+    n_estimators: 1
+    max_depth: 10
+
+data:
+  path: "./data/churn_bank.csv"
+  target: "Exited"
+  exclude: ["RowNumber","CustomerId","Surname"]
+
+train_test_split:
+  test_size: 0.2
+  random_state: 42
