@@ -8,8 +8,8 @@ mlflow:
 model: 
   type: "random_forest"  # or "logistic_regression", "xgboost", etc.
   params: 
-    n_estimators: 1
-    max_depth: 10
+    n_estimators: 10
+    max_depth: 100
 
 data:
   path: "./data/churn_bank.csv"
