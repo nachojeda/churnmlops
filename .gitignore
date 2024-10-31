@@ -29,3 +29,8 @@
 # Python
 *.py[cod]
 __pycache__/
+
+# Data paths
+data/churn_bank.csv
+data/WA_Fn-UseC_-HR-Employee-Attrition.xlsx
+
